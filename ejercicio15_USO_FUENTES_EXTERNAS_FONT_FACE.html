@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Modelo de cajas</title>
+	<meta charset="UTF-8"/>
+	
+	<style>
+		#capa{
+			width: 500px;
+			height: 500px;
+			background-color: #ff0;
+			margin: 60px; 
+			padding: 30px; 
+		}
+		
+		
+		/* 1 - Se nombra la Fuente y se da su ubicación */
+		@font-face{
+			font-family: MiFuente;
+			/*src:url(font/PAC-FONT.ttf);*/
+			src:url(font/SketchCollege.ttf);
+		
+		}
+		
+		
+		/* 2 - Ya se puede usar en cualquier elemento */
+		p {
+			font-family: MiFuente;
+			font-size: 30px;
+		
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>FUENTE INCORPORADA CON @FONT-FACE</h1>
+	<div id="capa">
+		<p>Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto. Esto es un texto.</p>
+	</div>
+</body>
+</html>	

@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Animaciones</title>
+<style>
+
+#contenedor-cajas {
+	height:200px;
+}
+
+#caja1, #caja2, #caja3, #caja4{
+	float: left;
+	width: 100px;
+	height: 100px;
+	background-color: #f33;
+}
+	
+#caja1 {
+	animation-duration: 3s;
+	animation-name: slidein1;
+	margin-left: 30%;
+}
+
+@keyframes slidein1 {
+	  from {
+		width: 0px;
+		margin-left: 100%;
+		
+	  }
+	  
+	  50%{
+	  
+		width: 200px;
+		height: 200px;
+		margin-left: 0px;
+		background-color: #3f3;
+	  
+	  }
+
+	  to {
+		width: 100px;
+		margin-left: 30%;
+		
+	  }
+}
+
+#caja2, #caja3, #caja4 {
+	animation-duration: 10s;
+	animation-name: slidein2;
+	margin-left: 10px;
+}
+
+
+@keyframes slidein2 {
+	  from {
+		width: 0px;
+		margin-left: 0px;
+		
+	  }
+	  
+	  50%{
+	  
+		width: 200px;
+		height: 200px;
+		margin-left: 5px;
+		background-color: #3f3;
+	  
+	  
+	  }
+	  
+	  to {
+		width: 100px;
+		margin-left: 10px;
+		
+	  }
+}
+
+
+</style>
+</head>
+<body>
+
+<p><b>Nota:</b> Este ejemplo no funciona en IE9 y versiones anteriores.</p>
+<div id="contenedor-cajas">
+	<div id="caja1"></div>
+	<div id="caja2"></div>
+	<div id="caja3"></div>
+	<div id="caja4"></div> 
+</div>
+<p><b>Nota:</b> Cuando termina una animación, vuelve a su estado inicial.</p>
+
+</body>
+</html>
+

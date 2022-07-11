@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* link inactivo */
+a:link {
+    color: #f00;
+}
+
+/* link visitado */
+a:visited {
+    color: #0f0;
+}
+
+/* mouse sobre link */
+a:hover {
+    color: #ff0;
+}
+
+/* link seleccionado*/
+a:active {
+    color: #00f;
+}
+</style>
+</head>
+<body>
+
+<p><b><a href="default.asp" target="_blank">Esto es un enlace</a></b></p>
+<p><b>Nota:</b> a:hover DEBE ir tras a:link y a:visited en la definición de CSS para ser efectivo.</p>
+<p><b>Nota:</b> a:active DEBE ir tras a:hover en la definición de CSS para ser efectivo.</p>
+
+</body>
+</html>

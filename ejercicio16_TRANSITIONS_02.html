@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Transiciones</title>
+<style>
+
+
+/* Se pueden combinar varias reglas, en este caso width, height y background-color. En "transition" hay que especificar cada regla y la duración de su transición, separadas por comas. */
+div {
+    width: 100px;
+    height: 100px;
+	background-color: #f33;
+   -webkit-transition: width 2s, height 2s, background-color 3s;  
+    transition: width 2s, height 2s, background-color 3s;
+}
+
+div:hover {
+    width: 300px;
+	height: 300px;
+	background-color: #3f3;
+}
+
+div p{
+	opacity: 0;
+   -webkit-transition: opacity 2s;  /* For Safari 3.1 to 6.0 */
+    transition: opacity 2s;
+   
+}
+
+div:hover p{
+	opacity: 1;
+}
+
+</style>
+</head>
+<body>
+
+<p><b>Nota:</b> Este ejemplo no funciona en IE9 y versiones anteriores.</p>
+
+<div><p>Este texto aparece al pasar el ratón sobre el cuadro rojo. Este texto aparece al pasar el ratón sobre el cuadro rojo.  Este texto aparece al pasar el ratón sobre el cuadro rojo. Este texto aparece al pasar el ratón sobre el cuadro rojo.</p></div>
+
+<p>Pasa eñ ratón sobre el rectángulo para ver el efecto.</p>
+
+</body>
+</html>

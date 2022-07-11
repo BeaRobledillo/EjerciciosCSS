@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Transiciones</title>
+<style>
+
+div {
+    width: 500px;
+    padding:10px;
+	background-color: #f77;
+  
+}
+
+
+/* Seleccionamos la propiedad a al que aplicar la transición (en este caso opacity) y especificamos la duración (2s) */ 
+div img{
+	opacity: 0;
+   -webkit-transition: opacity 2s;  /* For Safari 3.1 to 6.0 */
+    transition: opacity 2s;
+   
+}
+
+div:hover img{
+	opacity: 1;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<p><b>Nota:</b> Este ejemplo no funciona en IE9 y versiones anteriores.</p>
+
+<div><img src="img/ornitorrinco-frente.jpg"></div>
+
+<p>Pasa el ratón sobre el rectángulo para ver el efecto.</p>
+
+</body>
+</html>

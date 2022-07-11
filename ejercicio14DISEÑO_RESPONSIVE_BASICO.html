@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>ejercicio DISEÑO LIQUIDO</title>
+<meta charset="UTF-8">
+<head> 
+<style> 
+#contenedor{
+	margin: 0 auto;
+	width: 80%;
+	background-color: #999;
+}
+
+#cabecera {
+	height: 100px;
+	background-color: #0f0;
+	margin-bottom: 10px;
+}
+
+#menuizq {
+	float: left;
+	height: 100px;
+	width: 25%;
+	background-color: #f00;
+}
+
+#seccion {
+	float:left;
+	height: 400px; 
+	width: 75%;
+	background-color: #4ff;
+} 
+
+#pie {
+	clear:both;
+	height: 75px; 
+	background-color: #3f7;
+}
+ 
+@media screen and (max-width:980px) {
+	#contenedor {
+		width: 98%;
+	}
+}
+ 
+@media screen and (max-width:700px) {
+	#menuizq {
+		margin: 0 auto;
+		width:98%;
+		float:none;
+		margin-bottom:5px;
+	}
+	
+	#seccion {
+		margin: 0 auto;
+		width:98%;
+		float:none;
+	}
+} 
+ 
+</style> 
+</head> 
+<body> 
+
+<div id="contenedor">
+	<div id="cabecera"></div>
+	<div id="menuizq"></div>
+	<div id="seccion"></div>
+	<div id="pie"></div>
+</div>
+
+</body>
+</html>
